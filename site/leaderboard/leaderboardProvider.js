@@ -9,8 +9,11 @@ const __updateDelay = 3;
     .then(jsonData => {
       if (jsonData.status) {
         let scoreData = [];
+        
         for (let dataId in jsonData.data) {
-          // jsonData.data[dataId].points = Math.ceil(Math.random() * 1000);
+          // For testing //
+          jsonData.data[dataId].points = Math.ceil(Math.random() * 1000);
+
           let data = jsonData.data[dataId];
           scoreData.push({
             id: dataId,

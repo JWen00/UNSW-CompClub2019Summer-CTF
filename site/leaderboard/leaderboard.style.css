@@ -1,0 +1,6 @@
+@import url(/assets/font/hack-subset.css);
+* {
+  font-family: Hack, monospace !important;
+  cursor: pointer;
+  user-select: none;
+}
